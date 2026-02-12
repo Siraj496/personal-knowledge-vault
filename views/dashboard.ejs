@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<%- include("partials/header") %>
+
+<h1>Welcome, <%= user.email %>!</h1>
+<a href="/note" class="primary-btn">Add New Note</a>
+
+
+<ul>
+  <% notes.forEach(note => { %>
+    <li>
+      <strong><%= note.title %></strong>
+      <p><%= note.content %></p>
+
+      <% if(note.tags.length > 0){ %>
+        <p>Tags: <%= note.tags.join(", ") %></p>
+      <% } %>
+<div class="note-card">
+  <h2><%= note.title %></h2>
+  <p><%= note.content %></p>
+
+<div class="note-actions">
+  <a href="/edit-note/<%= note.id %>">
+    <button type="button" class="edit-btn">Edit</button>
+  </a>
+
+  <form action="/delete-note" method="POST">
+    <input type="hidden" name="noteId" value="<%= note.id %>">
+    <button type="submit" class="delete-btn">Delete</button>
+  </form>
+</div>
+
+    </li>
+  <% }) %>
+</ul>
+
+<%- include("partials/footer") %>
+
+</body>
+</html>

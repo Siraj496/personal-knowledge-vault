@@ -1,0 +1,220 @@
+/* ==========================
+   General Styles
+========================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ==========================
+   Header & Navigation
+========================== */
+header {
+  background-color: #4a90e2;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   Headings
+========================== */
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ==========================
+   Main Forms (Login, Register, Add, Edit)
+========================== */
+.main-form {
+  background-color: #ffffff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.main-form div {
+  margin-bottom: 1rem;
+}
+
+.main-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.main-form input[type="text"],
+.main-form input[type="email"],
+.main-form input[type="password"],
+.main-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+}
+
+.main-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.main-form button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.6rem 1.3rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.main-form button:hover {
+  background-color: #357ab8;
+}
+
+/* ==========================
+   Notes List
+========================== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff;
+  margin-bottom: 1.2rem;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+li h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+li p {
+  margin: 0.4rem 0;
+  line-height: 1.5;
+}
+
+/* ==========================
+   Note Action Buttons
+========================== */
+.note-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.note-actions form {
+  background: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* Edit Button */
+.edit-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #357ab8;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* ==========================
+   Primary Button (Add Note etc.)
+========================== */
+.primary-btn {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.6rem 1.3rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #357ab8;
+}
+
+
+/* ==========================
+   Google Button
+========================== */
+.google-btn {
+  display: inline-block;
+  background-color: #db4437;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.google-btn:hover {
+  background-color: #c1351d;
+}
+
+/* ==========================
+   Footer
+========================== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  background-color: #4a90e2;
+  color: white;
+}
